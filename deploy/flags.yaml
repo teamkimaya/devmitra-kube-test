@@ -3,4 +3,4 @@ kind: ConfigMap
 metadata:
   name: git-flags
 data:
-  CHECKOUT_V2: "on"
+  CHECKOUT_V2: "beta"
