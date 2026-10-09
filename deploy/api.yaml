@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: git-api
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: git-api
+  template:
+    metadata:
+      labels:
+        app: git-api
+    spec:
+      containers:
+      - name: api
+        image: nginx:1.27-alpine
